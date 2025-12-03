@@ -53,7 +53,13 @@ def deduplicate_clarity_data(input_file, output_file):
 def deduplicate_export_data(input_file, output_file):
     """
     Deduplicate export.csv by normalizing URLs and aggregating user counts.
-    For duplicate URLs, sum the user counts and keep the LandingPageFlag if any is set.
+    
+    For duplicate URLs (differing only by trailing slash):
+    - User counts are SUMMED (e.g., 467 + 1 = 468)
+    - LandingPageFlag is preserved (any non-empty value is kept)
+    - Final URL is normalized without trailing slash
+    
+    This ensures accurate user count totals while eliminating redundant URL entries.
     """
     url_data = defaultdict(lambda: {'landing_flag': '', 'user_count': 0})
     
