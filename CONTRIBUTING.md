@@ -21,8 +21,10 @@ When reporting issues, please include:
 ### Making Changes
 
 1. **Fork the Repository**
+   - Click the "Fork" button on GitHub, or
+   - Use GitHub CLI:
    ```bash
-   git fork https://github.com/VamshiSamineni/GitHubMCPServer_TestRepo.git
+   gh repo fork VamshiSamineni/GitHubMCPServer_TestRepo --clone
    ```
 
 2. **Create a Feature Branch**
@@ -126,10 +128,13 @@ Examples:
 
 ## File Naming Conventions
 
+For new files being added:
 - Use descriptive, kebab-case names: `user-analytics-data.csv`
-- Avoid spaces in filenames
+- Avoid spaces and special characters in filenames
 - Include version numbers when applicable: `report-v2.csv`
 - Use standard file extensions
+
+**Note**: Some existing files may not follow these conventions. Maintain consistency with existing naming when updating those files, but use these standards for all new files.
 
 ## Testing
 
