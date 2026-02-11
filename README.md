@@ -25,6 +25,7 @@ This repository serves as a test environment for the GitHub MCP (Model Context P
 ### Documentation Files
 
 - **Assignment (1).docx**: Microsoft Word document containing assignment or project documentation
+  - *Note: Legacy filename - new files should follow kebab-case conventions*
 
 ## Purpose
 

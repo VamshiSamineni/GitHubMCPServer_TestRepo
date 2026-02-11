@@ -1,0 +1,20 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# CSV files should use LF line endings
+*.csv text eol=lf
+
+# Windows-specific files should use CRLF
+*.bat text eol=crlf
+
+# Unix-specific files should use LF
+*.sh text eol=lf
+
+# Binary files
+*.docx binary
+*.bim binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
