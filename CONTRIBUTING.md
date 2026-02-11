@@ -91,7 +91,7 @@ Examples:
 ### CSV Files
 
 - **Encoding**: Maintain UTF-8 encoding
-- **Line Endings**: Git will handle line ending conversions automatically via `.gitattributes`. Use your platform's native line endings during development.
+- **Line Endings**: CSV files will be automatically normalized to LF (Unix-style) line endings when committed, as configured in `.gitattributes`. You can use your platform's native line endings during development, and Git will handle the conversion.
 - **Headers**: First row should contain column headers
 - **Format**: Ensure valid CSV structure
 
